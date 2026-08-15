@@ -19,21 +19,21 @@ Cuando una imagen, banner, logo, mockup, captura o composición visual haya sido
 3. **No cambiar colores, proporciones, composición ni elementos internos** del activo aprobado.
 4. **No usar `object-fit: cover` ni `aspect-ratio` que recorte una imagen aprobada.** El activo debe mostrarse completo salvo que el propietario solicite explícitamente un recorte.
 5. Si el activo aprobado es raster y debe mantenerse como archivo dentro de GitHub, puede encapsularse en un SVG con `data:image/...;base64` sin alterar la imagen original.
-6. Los archivos visuales aprobados deben tener nombres claros y estables. Ejemplos actuales:
-   - `assets/engranaje.svg`
-   - `assets/profemi.svg`
-   - `assets/checkmaq.svg`
-   - `assets/home.svg`
-7. Los archivos `*-visual.svg`, `*-card.svg` o `*-preview.svg` que representen una reinterpretación **no deben sustituir** a un activo aprobado.
+6. Los archivos visuales aprobados deben tener nombres claros y estables.
+7. Los archivos `*-visual.svg`, `*-card.svg` o `*-preview.svg` que sean reinterpretaciones **no pueden sustituir** a un activo aprobado.
 8. Si falta el archivo exacto aprobado, **NO se debe inventar un reemplazo y presentarlo como si fuera el mismo**. Se debe dejar constancia de que falta el asset original.
 9. Antes de publicar un cambio visual, comprobar que la ruta HTML/CSS apunta al archivo aprobado correcto.
 10. Si una imagen se ve diferente en la web respecto de la imagen aprobada, revisar primero la ruta del asset, `object-fit`, `aspect-ratio`, `width/height`, compresión y caché antes de generar una nueva imagen.
 
-## Estado actual
+## Estado actual del repositorio
 
-La portada y las páginas de Engranaje, ProfeEmi y CheckMaq fueron ajustadas para utilizar directamente los activos aprobados disponibles en `assets/` y para evitar el recorte automático.
+Se corrigió el CSS para que las imágenes no sean recortadas automáticamente.
 
-**ForestaMetrics:** el repositorio actualmente contiene `assets/forestametrics-preview.svg`. Si existe una imagen oficial aprobada distinta, debe reemplazarse por ese archivo exacto antes de considerarla definitiva.
+La regla queda documentada en este archivo y debe considerarse obligatoria para futuras modificaciones.
+
+**Importante:** las imágenes exactas aprobadas que están disponibles en el entorno de trabajo (`emotion_assets/`) todavía no están todas almacenadas como archivos equivalentes dentro de este repositorio. Por eso no se deben cambiar las referencias actuales a nombres que todavía no existen en GitHub.
+
+**ForestaMetrics:** el repositorio contiene `assets/forestametrics-preview.svg`. Si existe una imagen oficial aprobada distinta, debe incorporarse como archivo exacto antes de considerarla definitiva.
 
 ## Criterio de aprobación
 
