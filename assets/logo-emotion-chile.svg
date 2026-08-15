@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 190" role="img" aria-labelledby="title desc"><title id="title">E-motion Chile SpA</title><desc id="desc">Logo E-motion Chile con símbolo turquesa y texto E-MOTION CHILE.</desc><defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#16d9e8"/><stop offset="1" stop-color="#0bb8ff"/></linearGradient></defs><g fill="none" stroke="url(#g)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"><path d="M72 38h92l-27 25H73l-34 30 34 30h64l27 25H72L20 93z"/><path d="M57 69l25 24-25 24"/><path d="M106 70h83M106 116h83"/></g><text x="220" y="88" fill="#f5fbff" font-family="Arial,Helvetica,sans-serif" font-size="58" font-weight="800" letter-spacing="4">E-MOTION</text><text x="225" y="139" fill="#12cce3" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700" letter-spacing="13">CHILE</text><line x1="410" y1="153" x2="570" y2="153" stroke="#12cce3" stroke-width="3"/><text x="420" y="178" fill="#b9d8e4" font-family="Arial,Helvetica,sans-serif" font-size="15" letter-spacing="3">CONECTANDO TU MUNDO</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 190" role="img" aria-labelledby="title desc">
+<title id="title">E-motion Chile SpA</title>
+<desc id="desc">Logo oficial de E-motion Chile: símbolo turquesa, E-MOTION CHILE y Conectando tu mundo.</desc>
+<rect width="820" height="190" fill="none"/>
+<g fill="#12c8df">
+<path d="M28 58c27-35 55-50 104-50h66c-11 23-28 39-55 50H80c-19 0-36 5-52 16z"/>
+<path d="M24 91c34-7 61-8 91-8h104c-8 17-23 28-43 34H85c-23 0-42-6-61-18z"/>
+<path d="M28 132c27 16 47 22 72 22h63c20 0 39 10 52 28h-80c-48 0-78-15-107-50z"/>
+</g>
+<text x="260" y="78" fill="#f7fbff" font-family="Arial,Helvetica,sans-serif" font-size="58" font-weight="800" letter-spacing="3">E-MOTION</text>
+<text x="268" y="124" fill="#12c8df" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700" letter-spacing="12">CHILE</text>
+<line x1="265" y1="151" x2="355" y2="151" stroke="#12c8df" stroke-width="3"/>
+<text x="370" y="157" fill="#d9eaf0" font-family="Arial,Helvetica,sans-serif" font-size="20" letter-spacing="1">Conectando tu mundo</text>
+</svg>
