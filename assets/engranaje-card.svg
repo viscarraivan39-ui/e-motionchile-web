@@ -1,1 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420"><defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#00d9e8"/><stop offset="1" stop-color="#087cff"/></linearGradient></defs><rect width="720" height="420" rx="28" fill="#061d31"/><rect x="42" y="38" width="636" height="344" rx="22" fill="#082b43" stroke="#12cde2" stroke-opacity=".4"/><g transform="translate(130 92)" fill="none" stroke="url(#g)" stroke-width="13"><circle cx="125" cy="105" r="74"/><circle cx="125" cy="105" r="25"/><path d="M125 14v32M125 164v32M34 105H2M248 105h32M61 41l23 23M166 146l23 23M189 41l-23 23M84 146l-23 23"/></g><g fill="#eaf9ff" font-family="Arial,Helvetica,sans-serif"><text x="320" y="125" font-size="36" font-weight="800">ENGRANAJE</text><text x="320" y="165" font-size="19" fill="#9cc1d1">Gestión de pedidos</text><text x="320" y="198" font-size="19" fill="#9cc1d1">simple, rápida y conectada.</text></g><g fill="#12d3e7"><circle cx="350" cy="265" r="8"/><circle cx="400" cy="265" r="8"/><circle cx="450" cy="265" r="8"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-labelledby="title desc">
+<title id="title">Engranaje de E-motion Chile SpA</title>
+<desc id="desc">Logo de Engranaje con engranaje turquesa, letra E y líneas de movimiento.</desc>
+<rect width="900" height="420" rx="28" fill="#061b2f"/>
+<g transform="translate(48 55)">
+<g fill="#16d9d8">
+<rect x="92" y="0" width="34" height="64" rx="8"/>
+<rect x="92" y="246" width="34" height="64" rx="8"/>
+<rect x="0" y="92" width="64" height="34" rx="8"/>
+<rect x="154" y="92" width="64" height="34" rx="8"/>
+<rect x="28" y="27" width="34" height="62" rx="8" transform="rotate(-45 45 58)"/>
+<rect x="156" y="215" width="34" height="62" rx="8" transform="rotate(-45 173 246)"/>
+<rect x="156" y="27" width="34" height="62" rx="8" transform="rotate(45 173 58)"/>
+<rect x="28" y="215" width="34" height="62" rx="8" transform="rotate(45 45 246)"/>
+<circle cx="109" cy="109" r="88"/>
+</g>
+<circle cx="109" cy="109" r="55" fill="#061b2f"/>
+<text x="73" y="140" fill="#f8fbff" font-family="Arial,Helvetica,sans-serif" font-size="88" font-weight="900">E</text>
+<g fill="#16d9d8">
+<path d="M174 80h90l-18 12h-72z"/>
+<path d="M174 108h90l-18 12h-72z"/>
+<path d="M174 136h90l-18 12h-72z"/>
+<path d="M174 164h90l-18 12h-72z"/>
+</g></g>
+<text x="300" y="145" fill="#f8fbff" font-family="Arial,Helvetica,sans-serif" font-size="62" font-style="italic" font-weight="900" letter-spacing="2">ENGRANAJE</text>
+<line x1="302" y1="170" x2="410" y2="170" stroke="#16d9d8" stroke-width="3"/>
+<text x="430" y="174" fill="#f8fbff" font-family="Arial,Helvetica,sans-serif" font-size="22">de <tspan fill="#16d9d8" font-style="italic" font-weight="700">E-motion</tspan> chile SpA</text>
+<text x="302" y="218" fill="#f8fbff" font-family="Arial,Helvetica,sans-serif" font-size="25">Tu negocio <tspan fill="#16d9d8">conectado</tspan> de principio a fin.</text>
+</svg>
