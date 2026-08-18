@@ -21,7 +21,7 @@
   nav a:hover{color:var(--green)}
   .p-hero{padding:70px 0 55px}
   .p-brand{display:flex;align-items:center;gap:16px;margin-bottom:18px}
-  .p-brand .mark{width:64px;height:64px;border-radius:16px;background:linear-gradient(160deg,var(--green),var(--green-dark));display:grid;place-items:center;font-size:1.8rem}
+  .p-brand .mark{width:64px;height:64px;object-fit:contain}
   .p-brand h1{font-size:2.4rem;letter-spacing:-.02em}
   .p-brand h1 b{color:var(--green)}
   .lead,p.lead{color:var(--muted);font-size:1.02rem;max-width:600px}
@@ -65,7 +65,7 @@
 <section class="p-hero">
   <div class="wrap detail-hero">
     <div>
-      <div class="p-brand"><div class="mark">🍃</div><h1>FORESTA<b>METRICS</b></h1></div>
+      <div class="p-brand"><img class="mark" src="../assets/approved/logo/forestametrics-icon.webp" alt="ForestaMetrics"><h1>FORESTA<b>METRICS</b></h1></div>
       <p class="lead">Información y análisis para una gestión forestal más inteligente y sostenible.</p>
       <div class="icon-row">
         <div class="icon-row-item"><span class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l2.5 2.5M16.5 16.5L19 19M19 5l-2.5 2.5M7.5 16.5L5 19"/></svg></span><span>Monitoreo satelital en tiempo real</span></div>
