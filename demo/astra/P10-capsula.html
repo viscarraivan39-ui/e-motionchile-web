@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>ASTRA · Microcápsula · Demostración</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<style>
+body{margin:0}
+a{color:#FF8A2A}a:hover{color:#ffb070}
+.p{display:flex;gap:12px;align-items:flex-start;font-size:17px;line-height:1.45}
+.p span{width:30px;height:30px;border-radius:8px;background:#1D2E4A;color:#FF8A2A;font-weight:700;display:grid;place-items:center;flex-shrink:0}
+</style>
+<style>
+html,body{margin:0;background:#0b111c}
+.demo-franja{position:sticky;top:0;z-index:100;background:#e8a317;color:#1d1606;font:600 13px/1.35 system-ui,sans-serif;text-align:center;padding:8px 12px}
+.demo-franja a{color:#1d1606}
+#escena{display:flex;justify-content:center;padding:12px 0 24px}
+#marco{transform-origin:top center}
+#marco.fluido{width:100%}
+</style>
+</head>
+<body>
+<div class="demo-franja">DEMOSTRACIÓN · Datos ficticios · <a href="index.html">Mapa de pantallas</a> · <a href="prototipo/">Probar el prototipo funcional</a> · <a href="https://e-motionchile.cl">E-MOTION CHILE SpA</a></div>
+<div id="escena"><div id="marco" class="fijo">
+<div style="position:relative;width:390px;height:844px;box-sizing:border-box;background:#0E1726;color:#F4F7FC;font-family:'Atkinson Hyperlegible','Segoe UI',sans-serif;display:flex;flex-direction:column;padding:22px 22px 24px;gap:14px"><a href="P09-dia2.html" style="position:absolute;top:4px;left:12px;z-index:5;font-size:13px;font-weight:700;color:#FF8A2A;text-decoration:none;line-height:16px">‹ Volver</a>
+  <div style="display:flex;align-items:center;justify-content:space-between"><div style="font-family:Archivo,sans-serif;font-weight:900;letter-spacing:5px;font-size:20px">ASTR<span style="color:#FF8A2A">A</span><span style="display:block;font-family:'Atkinson Hyperlegible',sans-serif;font-weight:400;letter-spacing:0;font-size:12px;line-height:1.3;color:#B9C6D8;margin-top:3px">Análisis de Seguridad y Trazabilidad<br>de Riesgos en Actividades</span></div><span style="font-size:15px;color:#B9C6D8">Cápsula 3 de 8</span></div>
+  <div style="height:214px;border-radius:18px;background:#1F3657;display:flex;flex-direction:column;justify-content:flex-end;padding:14px;gap:10px;position:relative">
+    <button aria-label="Reproducir" style="position:absolute;top:58px;left:50%;margin-left:-36px;width:72px;height:72px;border-radius:50%;border:0;background:#FF8A2A;display:grid;place-items:center"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l12 7-12 7z" fill="#1B1206"/></svg></button>
+    <div style="height:6px;border-radius:6px;background:#2A3F62;overflow:hidden"><div style="width:35%;height:100%;background:#FF8A2A"></div></div>
+    <div style="display:flex;justify-content:space-between;font-size:15px;color:#B9C6D8"><span>0:14</span><span>0:40</span></div>
+  </div>
+  <h1 style="margin:0;font-family:Archivo,sans-serif;font-weight:800;font-size:28px;line-height:1.1">Sierra circular: antes de cortar</h1>
+  <div style="font-size:15px;color:#B9C6D8">Para carpinteros · basada en PT-HER-01 · revisada por Prevención</div>
+  <div style="display:flex;flex-direction:column;gap:12px">
+    <div class="p"><span>1</span>Revisa que la protección del disco baje sola.</div>
+    <div class="p"><span>2</span>Corta sobre el mesón, nunca sobre la pierna.</div>
+    <div class="p"><span>3</span>Pantalla facial y protector auditivo puestos.</div>
+  </div>
+  <p style="margin:0;font-size:15px;color:#B9C6D8">Mírala en un lugar seguro. Ver la cápsula no te habilita para la tarea: es un apoyo.</p>
+  <a href="P11-verificar.html" style="margin-top:auto;height:64px;border:0;border-radius:16px;background:#FF8A2A;color:#1B1206;font-family:inherit;font-weight:700;font-size:20px;display:flex;align-items:center;justify-content:center;text-decoration:none">La vi completa</a>
+<div style="display:flex;align-items:center;justify-content:center;gap:8px;padding:8px 0 0;border-top:1px solid #2A3F62;flex-shrink:0"><img src="img/emotion.png" alt="E-MOTION CHILE" style="width:22px;height:22px;border-radius:5px"><span style="font-size:12px;letter-spacing:2px;color:#B9C6D8">UN PROYECTO DE <b style="color:#F4F7FC">E-MOTION CHILE</b></span></div>
+</div>
+</div></div>
+<script>
+(function(){
+  var marco=document.getElementById('marco'), escena=document.getElementById('escena');
+  if(marco.classList.contains('fluido')) return;
+  var raiz=marco.firstElementChild;
+  function ajustar(){
+    var w=raiz.offsetWidth, h=raiz.offsetHeight, franja=document.querySelector('.demo-franja').offsetHeight;
+    var s=Math.min(1,(window.innerWidth-16)/w);
+    if(h<=1000) s=Math.min(s,(window.innerHeight-franja-36)/h);
+    s=Math.max(s,0.3);
+    marco.style.transform='scale('+s+')';
+    escena.style.height=(h*s+36)+'px';
+  }
+  window.addEventListener('resize',ajustar); ajustar();
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(ajustar);
+})();
+</script>
+</body>
+</html>

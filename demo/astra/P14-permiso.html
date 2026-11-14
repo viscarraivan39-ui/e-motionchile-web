@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>ASTRA · Prevención · autorizar permiso · Demostración</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<style>
+body{margin:0}
+a{color:#FF8A2A}a:hover{color:#ffb070}
+.c{display:flex;align-items:center;gap:12px;background:#16233A;border:1px solid #2A3F62;border-radius:14px;padding:12px 14px;font-size:17px;font-weight:700}
+.c input{width:26px;height:26px;accent-color:#2FD27A;flex-shrink:0}
+.c small{display:block;font-size:15px;font-weight:400;color:#B9C6D8}
+.pe{display:flex;justify-content:space-between;font-size:16px;padding:8px 0;border-bottom:1px solid #2A3F62}
+.pe span{color:#2FD27A;font-weight:700}
+</style>
+<style>
+html,body{margin:0;background:#0b111c}
+.demo-franja{position:sticky;top:0;z-index:100;background:#e8a317;color:#1d1606;font:600 13px/1.35 system-ui,sans-serif;text-align:center;padding:8px 12px}
+.demo-franja a{color:#1d1606}
+#escena{display:flex;justify-content:center;padding:12px 0 24px}
+#marco{transform-origin:top center}
+#marco.fluido{width:100%}
+</style>
+</head>
+<body>
+<div class="demo-franja">DEMOSTRACIÓN · Datos ficticios · <a href="index.html">Mapa de pantallas</a> · <a href="prototipo/">Probar el prototipo funcional</a> · <a href="https://e-motionchile.cl">E-MOTION CHILE SpA</a></div>
+<div id="escena"><div id="marco" class="fijo">
+<div style="position:relative;width:390px;height:844px;box-sizing:border-box;background:#0E1726;color:#F4F7FC;font-family:'Atkinson Hyperlegible','Segoe UI',sans-serif;display:flex;flex-direction:column;padding:22px 20px 22px;gap:12px"><a href="P13-pendientes.html" style="position:absolute;top:4px;left:12px;z-index:5;font-size:13px;font-weight:700;color:#FF8A2A;text-decoration:none;line-height:16px">‹ Volver</a>
+  <div style="display:flex;align-items:center;justify-content:space-between"><div style="font-family:Archivo,sans-serif;font-weight:900;letter-spacing:5px;font-size:20px">ASTR<span style="color:#FF8A2A">A</span><span style="display:block;font-family:'Atkinson Hyperlegible',sans-serif;font-weight:400;letter-spacing:0;font-size:12px;line-height:1.3;color:#B9C6D8;margin-top:3px">Análisis de Seguridad y Trazabilidad<br>de Riesgos en Actividades</span> <span style="font-size:13px;letter-spacing:2px;color:#B9C6D8">PREVENCIÓN</span></div><span style="font-size:15px;font-weight:700;color:#FFC93D">En terreno</span></div>
+  <h1 style="margin:0;font-family:Archivo,sans-serif;font-weight:800;font-size:28px;line-height:1.1">Permiso de trabajo en altura</h1>
+  <div style="font-size:15px;color:#B9C6D8">Piso 1 · barandas en borde de losa · revisó Irene (capataz) 08:31</div>
+  <label class="c"><input type="checkbox" checked><div>Línea de vida instalada y revisada<small>Tensión y anclajes vistos en persona</small></div></label>
+  <label class="c"><input type="checkbox" checked><div>Zona inferior delimitada<small>Cinta y letrero en piso de abajo</small></div></label>
+  <label class="c"><input type="checkbox"><div>Plan de rescate conocido<small>Preguntar a la cuadrilla</small></div></label>
+  <div style="background:#16233A;border:1px solid #2A3F62;border-radius:14px;padding:6px 14px">
+    <div class="pe">Andrés · examen de altura<span>vigente</span></div>
+    <div class="pe">Bruno · examen de altura<span>vigente</span></div>
+    <div class="pe" style="border:0">Carla · examen de altura<span style="color:#FFC93D">vence en 9 días</span></div>
+  </div>
+  <div style="font-size:15px;color:#B9C6D8">Se autoriza solo en persona: la app guarda tu ubicación en el área y la hora.</div>
+  <a href="P15-accidente.html" style="margin-top:auto;height:64px;border:0;border-radius:16px;background:#FF8A2A;color:#1B1206;font-family:inherit;font-weight:700;font-size:20px;display:flex;align-items:center;justify-content:center;text-decoration:none">Autorizar en terreno</a>
+  <button style="height:56px;border:1px solid #FF6B6B;border-radius:16px;background:transparent;color:#FF6B6B;font-family:inherit;font-weight:700;font-size:18px">Rechazar con motivo</button>
+<div style="display:flex;align-items:center;justify-content:center;gap:8px;padding:8px 0 0;border-top:1px solid #2A3F62;flex-shrink:0"><img src="img/emotion.png" alt="E-MOTION CHILE" style="width:22px;height:22px;border-radius:5px"><span style="font-size:12px;letter-spacing:2px;color:#B9C6D8">UN PROYECTO DE <b style="color:#F4F7FC">E-MOTION CHILE</b></span></div>
+</div>
+</div></div>
+<script>
+(function(){
+  var marco=document.getElementById('marco'), escena=document.getElementById('escena');
+  if(marco.classList.contains('fluido')) return;
+  var raiz=marco.firstElementChild;
+  function ajustar(){
+    var w=raiz.offsetWidth, h=raiz.offsetHeight, franja=document.querySelector('.demo-franja').offsetHeight;
+    var s=Math.min(1,(window.innerWidth-16)/w);
+    if(h<=1000) s=Math.min(s,(window.innerHeight-franja-36)/h);
+    s=Math.max(s,0.3);
+    marco.style.transform='scale('+s+')';
+    escena.style.height=(h*s+36)+'px';
+  }
+  window.addEventListener('resize',ajustar); ajustar();
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(ajustar);
+})();
+</script>
+</body>
+</html>

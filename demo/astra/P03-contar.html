@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>ASTRA · Contar el trabajo · Demostración</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<style>
+body{margin:0}
+a{color:#FF8A2A}a:hover{color:#ffb070}
+</style>
+<style>
+html,body{margin:0;background:#0b111c}
+.demo-franja{position:sticky;top:0;z-index:100;background:#e8a317;color:#1d1606;font:600 13px/1.35 system-ui,sans-serif;text-align:center;padding:8px 12px}
+.demo-franja a{color:#1d1606}
+#escena{display:flex;justify-content:center;padding:12px 0 24px}
+#marco{transform-origin:top center}
+#marco.fluido{width:100%}
+</style>
+</head>
+<body>
+<div class="demo-franja">DEMOSTRACIÓN · Datos ficticios · <a href="index.html">Mapa de pantallas</a> · <a href="prototipo/">Probar el prototipo funcional</a> · <a href="https://e-motionchile.cl">E-MOTION CHILE SpA</a></div>
+<div id="escena"><div id="marco" class="fijo">
+<div style="position:relative;width:390px;height:844px;box-sizing:border-box;background:#0E1726;color:#F4F7FC;font-family:'Atkinson Hyperlegible','Segoe UI',sans-serif;display:flex;flex-direction:column;padding:22px 22px 24px;gap:16px"><a href="P02-area.html" style="position:absolute;top:4px;left:12px;z-index:5;font-size:13px;font-weight:700;color:#FF8A2A;text-decoration:none;line-height:16px">‹ Volver</a>
+  <div style="display:flex;align-items:center;justify-content:space-between"><div style="font-family:Archivo,sans-serif;font-weight:900;letter-spacing:5px;font-size:20px">ASTR<span style="color:#FF8A2A">A</span><span style="display:block;font-family:'Atkinson Hyperlegible',sans-serif;font-weight:400;letter-spacing:0;font-size:12px;line-height:1.3;color:#B9C6D8;margin-top:3px">Análisis de Seguridad y Trazabilidad<br>de Riesgos en Actividades</span></div><span style="font-size:15px;font-weight:700;color:#FF8A2A">Paso 1 de 4</span></div>
+  <div style="height:8px;border-radius:8px;background:#1D2E4A;overflow:hidden"><div style="width:25%;height:100%;background:#FF8A2A"></div></div>
+  <h1 style="margin:0;font-family:Archivo,sans-serif;font-weight:800;font-size:32px;line-height:1.1">¿Qué trabajo vas a hacer hoy?</h1>
+  <p style="margin:0;font-size:18px;line-height:1.5;color:#B9C6D8">Dilo con tus palabras y con qué herramientas o máquinas. No necesitas saber el nombre del procedimiento.</p>
+  <button aria-label="Dictar" style="align-self:center;width:150px;height:150px;border-radius:50%;border:0;background:#FF8A2A;box-shadow:0 0 0 16px rgba(255,138,42,.18);display:grid;place-items:center;margin:14px 0"><svg width="56" height="56" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a3 3 0 013 3v6a3 3 0 01-6 0V6a3 3 0 013-3z M5 11a7 7 0 0014 0 M12 18v3" fill="none" stroke="#1B1206" stroke-width="2"/></svg></button>
+  <div style="text-align:center;font-size:16px;color:#B9C6D8">Escuchando…</div>
+  <label for="dicho" style="font-size:15px;color:#B9C6D8">Lo que entendí</label>
+  <textarea id="dicho" style="height:110px;box-sizing:border-box;border-radius:14px;border:1px solid #2A3F62;border-left:6px solid #FF8A2A;background:#16233A;color:#F4F7FC;font-family:inherit;font-size:19px;line-height:1.45;padding:12px 14px;resize:none">Voy a armar moldaje de losa cortando placas con la sierra circular.</textarea>
+  <a href="P04-procedimientos.html" style="margin-top:auto;height:64px;border:0;border-radius:16px;background:#FF8A2A;color:#1B1206;font-family:inherit;font-weight:700;font-size:20px;display:flex;align-items:center;justify-content:center;text-decoration:none">Continuar</a>
+  <button style="height:56px;border:1px solid #2A3F62;border-radius:16px;background:#1D2E4A;color:#F4F7FC;font-family:inherit;font-weight:700;font-size:18px">Escribir en vez de dictar</button>
+<div style="display:flex;align-items:center;justify-content:center;gap:8px;padding:8px 0 0;border-top:1px solid #2A3F62;flex-shrink:0"><img src="img/emotion.png" alt="E-MOTION CHILE" style="width:22px;height:22px;border-radius:5px"><span style="font-size:12px;letter-spacing:2px;color:#B9C6D8">UN PROYECTO DE <b style="color:#F4F7FC">E-MOTION CHILE</b></span></div>
+</div>
+</div></div>
+<script>
+(function(){
+  var marco=document.getElementById('marco'), escena=document.getElementById('escena');
+  if(marco.classList.contains('fluido')) return;
+  var raiz=marco.firstElementChild;
+  function ajustar(){
+    var w=raiz.offsetWidth, h=raiz.offsetHeight, franja=document.querySelector('.demo-franja').offsetHeight;
+    var s=Math.min(1,(window.innerWidth-16)/w);
+    if(h<=1000) s=Math.min(s,(window.innerHeight-franja-36)/h);
+    s=Math.max(s,0.3);
+    marco.style.transform='scale('+s+')';
+    escena.style.height=(h*s+36)+'px';
+  }
+  window.addEventListener('resize',ajustar); ajustar();
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(ajustar);
+})();
+</script>
+</body>
+</html>

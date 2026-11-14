@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>ASTRA · Informes (computador) · Demostración</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+body{margin:0;background:#0E1726}
+a{color:#FF8A2A}a:hover{color:#ffb070}
+.nav a{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:10px;color:#B9C6D8;text-decoration:none;font-size:15px;font-weight:700}
+.nav a.on{background:#1D2E4A;color:#F4F7FC}
+.fil{display:flex;flex-direction:column;gap:4px;font-size:14px;color:#B9C6D8;min-width:0}
+.fil select{height:44px;border-radius:10px;border:1px solid #2A3F62;background:#16233A;color:#F4F7FC;font-family:inherit;font-size:15px;padding:0 10px}
+.inf{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:center;padding:14px 4px;border-bottom:1px solid #1F3050}
+.inf b{font-size:17px;display:block}
+.inf span{font-size:15px;color:#B9C6D8}
+.acc{display:flex;gap:8px;flex-wrap:wrap}
+.acc button{height:44px;padding:0 14px;border-radius:10px;border:1px solid #2A3F62;background:#1D2E4A;color:#F4F7FC;font-family:inherit;font-weight:700;font-size:15px;display:inline-flex;align-items:center;gap:6px}
+.acc .x{color:#2FD27A}
+.acc .p{color:#FF8A2A}
+.campo{display:flex;flex-direction:column;gap:4px;font-size:14px;color:#B9C6D8}
+.campo input{height:44px;border-radius:10px;border:1px solid #2A3F62;background:#0E1726;color:#F4F7FC;font-family:inherit;font-size:15px;padding:0 10px}
+.chk{display:flex;align-items:center;gap:8px;font-size:15px}
+.chk input{width:20px;height:20px;accent-color:#FF8A2A}
+</style>
+<style>
+html,body{margin:0;background:#0b111c}
+.demo-franja{position:sticky;top:0;z-index:100;background:#e8a317;color:#1d1606;font:600 13px/1.35 system-ui,sans-serif;text-align:center;padding:8px 12px}
+.demo-franja a{color:#1d1606}
+#escena{display:flex;justify-content:center;padding:12px 0 24px}
+#marco{transform-origin:top center}
+#marco.fluido{width:100%}
+</style>
+</head>
+<body>
+<div class="demo-franja">DEMOSTRACIÓN · Datos ficticios · <a href="index.html">Mapa de pantallas</a> · <a href="prototipo/">Probar el prototipo funcional</a> · <a href="https://e-motionchile.cl">E-MOTION CHILE SpA</a></div>
+<div id="escena"><div id="marco" class="fluido">
+<div style="position:relative;min-height:900px;box-sizing:border-box;background:#0E1726;color:#F4F7FC;font-family:'Atkinson Hyperlegible','Segoe UI',sans-serif;display:flex;flex-wrap:wrap"><a href="D01-panel-prevencion.html" style="position:absolute;top:4px;right:12px;z-index:5;font-size:13px;font-weight:700;color:#FF8A2A;text-decoration:none;line-height:16px">‹ Volver</a>
+  <aside class="nav" style="flex:1 1 220px;max-width:240px;box-sizing:border-box;padding:22px 16px;border-right:1px solid #2A3F62;display:flex;flex-direction:column;gap:4px">
+    <div style="font-family:Archivo,sans-serif;font-weight:900;letter-spacing:6px;font-size:24px;padding:0 12px">ASTR<span style="color:#FF8A2A">A</span></div>
+    <div style="font-size:13px;color:#B9C6D8;padding:2px 12px 16px;line-height:1.35">Análisis de Seguridad y Trazabilidad de Riesgos en Actividades</div>
+    <a href="#">En vivo</a>
+    <a href="#">AST del día</a>
+    <a href="#">Cuadrillas</a>
+    <a href="#">Máquinas · Checkmaq</a>
+    <a href="#">Matriz de riesgos</a>
+    <a href="#">Auditor legal</a>
+    <a href="#" class="on">Informes</a>
+    <a href="#">Procedimientos</a>
+    <a href="#">Microcápsulas</a>
+    <a href="#">Configuración</a>
+    <div style="margin-top:auto;display:flex;align-items:center;gap:8px;padding:16px 12px 0;border-top:1px solid #2A3F62"><img src="img/emotion.png" alt="E-MOTION CHILE" style="width:26px;height:26px;border-radius:6px"><span style="font-size:12px;letter-spacing:1px;color:#B9C6D8;line-height:1.3">UN PROYECTO DE<br><b style="color:#F4F7FC">E-MOTION CHILE</b></span></div>
+  </aside>
+  <main style="flex:999 1 900px;min-width:0;padding:22px 28px;display:flex;flex-direction:column;gap:16px;box-sizing:border-box">
+    <h1 style="margin:0;font-family:Archivo,sans-serif;font-weight:800;font-size:30px">Informes</h1>
+    <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px">
+      <label class="fil">Obra<select><option>Edificio Los Aromos</option></select></label>
+      <label class="fil">Período<select><option>Noviembre 2026</option></select></label>
+      <label class="fil">Empresa<select><option>Todas (principal y subcontratos)</option></select></label>
+      <label class="fil">Área<select><option>Todas las áreas</option></select></label>
+    </div>
+    <div style="display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:18px">
+      <section style="background:#16233A;border:1px solid #2A3F62;border-radius:16px;padding:6px 18px">
+        <div class="inf"><div><b>Informe diario de faena</b><span>AST, personas registradas, bloqueos, hallazgos y detenciones del día</span></div><div class="acc"><button>Ver</button><button class="x">Excel</button><a href="D03-informe-pdf.html" class="p" style="height:44px;box-sizing:border-box;padding:0 14px;border-radius:10px;border:1px solid #2A3F62;background:#1D2E4A;font-weight:700;font-size:15px;display:inline-flex;align-items:center;gap:6px;text-decoration:none">PDF</a><button>Correo</button></div></div>
+        <div class="inf"><div><b>Informe de una AST</b><span>Día por día: quién se registró, cambios, etapas, firmas y observaciones</span></div><div class="acc"><button>Ver</button><button class="x">Excel</button><button class="p">PDF</button><button>Correo</button></div></div>
+        <div class="inf"><div><b>Cumplimiento legal</b><span>Auditor DS 44, DS 76, DS 594 y Ley Karin, con la norma citada</span></div><div class="acc"><button>Ver</button><button class="x">Excel</button><button class="p">PDF</button><button>Correo</button></div></div>
+        <div class="inf"><div><b>Incumplimientos y hallazgos</b><span>Por persona, empresa y requisito; corrección y verificación</span></div><div class="acc"><button>Ver</button><button class="x">Excel</button><button class="p">PDF</button><button>Correo</button></div></div>
+        <div class="inf"><div><b>Accidentes y estadísticas</b><span>Tasas de accidentabilidad, frecuencia y gravedad por mes</span></div><div class="acc"><button>Ver</button><button class="x">Excel</button><button class="p">PDF</button><button>Correo</button></div></div>
+        <div class="inf"><div><b>Máquinas · Checkmaq</b><span>Checklists, fallas, reparaciones y disponibilidad de la flota</span></div><div class="acc"><button>Ver</button><button class="x">Excel</button><button class="p">PDF</button><button>Correo</button></div></div>
+        <div class="inf" style="border:0"><div><b>Matriz de riesgos (MIPER)</b><span>Versión vigente, con controles y riesgo residual</span></div><div class="acc"><button>Ver</button><button class="x">Excel</button><button class="p">PDF</button><button>Correo</button></div></div>
+      </section>
+      <section style="background:#16233A;border:1px solid #2A3F62;border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:12px">
+        <h2 style="margin:0;font-family:Archivo,sans-serif;font-weight:800;font-size:20px">Enviar por correo</h2>
+        <div style="font-size:15px;color:#B9C6D8">Informe diario de faena · 11-nov</div>
+        <label class="campo">Para<input value="prevencion@constructora-ejemplo.cl"></label>
+        <label class="campo">Con copia<input value="mandante@inmobiliaria-ejemplo.cl"></label>
+        <div style="display:flex;gap:16px"><label class="chk"><input type="checkbox" checked>PDF</label><label class="chk"><input type="checkbox" checked>Excel</label></div>
+        <label class="chk"><input type="checkbox" checked>Repetir cada día hábil a las 18:00</label>
+        <button style="height:52px;border:0;border-radius:14px;background:#FF8A2A;color:#1B1206;font-family:inherit;font-weight:700;font-size:17px">Enviar ahora</button>
+        <div style="border-top:1px solid #2A3F62;padding-top:12px;display:flex;flex-direction:column;gap:6px;font-size:15px">
+          <b>Envíos programados</b>
+          <span style="color:#B9C6D8">Diario de faena · días hábiles 18:00 · 2 destinatarios</span>
+          <span style="color:#B9C6D8">Cumplimiento legal · lunes 08:00 · gerencia</span>
+          <span style="color:#B9C6D8">Checkmaq · viernes 17:00 · taller y jefe de terreno</span>
+        </div>
+      </section>
+    </div>
+  </main>
+</div>
+</div></div>
+<script>
+(function(){
+  var marco=document.getElementById('marco'), escena=document.getElementById('escena');
+  if(marco.classList.contains('fluido')) return;
+  var raiz=marco.firstElementChild;
+  function ajustar(){
+    var w=raiz.offsetWidth, h=raiz.offsetHeight, franja=document.querySelector('.demo-franja').offsetHeight;
+    var s=Math.min(1,(window.innerWidth-16)/w);
+    if(h<=1000) s=Math.min(s,(window.innerHeight-franja-36)/h);
+    s=Math.max(s,0.3);
+    marco.style.transform='scale('+s+')';
+    escena.style.height=(h*s+36)+'px';
+  }
+  window.addEventListener('resize',ajustar); ajustar();
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(ajustar);
+})();
+</script>
+</body>
+</html>

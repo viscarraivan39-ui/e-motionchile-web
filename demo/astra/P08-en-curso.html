@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>ASTRA · Trabajo en curso · Demostración</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<style>
+body{margin:0}
+a{color:#FF8A2A}a:hover{color:#ffb070}
+.r{display:flex;justify-content:space-between;gap:12px;font-size:16px;padding:9px 0;border-bottom:1px solid #2A3F62}
+.r span{color:#B9C6D8}
+</style>
+<style>
+html,body{margin:0;background:#0b111c}
+.demo-franja{position:sticky;top:0;z-index:100;background:#e8a317;color:#1d1606;font:600 13px/1.35 system-ui,sans-serif;text-align:center;padding:8px 12px}
+.demo-franja a{color:#1d1606}
+#escena{display:flex;justify-content:center;padding:12px 0 24px}
+#marco{transform-origin:top center}
+#marco.fluido{width:100%}
+</style>
+</head>
+<body>
+<div class="demo-franja">DEMOSTRACIÓN · Datos ficticios · <a href="index.html">Mapa de pantallas</a> · <a href="prototipo/">Probar el prototipo funcional</a> · <a href="https://e-motionchile.cl">E-MOTION CHILE SpA</a></div>
+<div id="escena"><div id="marco" class="fijo">
+<div style="position:relative;width:390px;height:844px;box-sizing:border-box;background:#0E1726;color:#F4F7FC;font-family:'Atkinson Hyperlegible','Segoe UI',sans-serif;display:flex;flex-direction:column;padding:22px 22px 24px;gap:16px"><a href="P07-firma.html" style="position:absolute;top:4px;left:12px;z-index:5;font-size:13px;font-weight:700;color:#FF8A2A;text-decoration:none;line-height:16px">‹ Volver</a><a href="P09-dia2.html" style="position:absolute;bottom:4px;right:16px;z-index:5;font-size:13px;font-weight:700;color:#FF8A2A;text-decoration:none;line-height:16px">Siguiente ›</a>
+  <div style="font-family:Archivo,sans-serif;font-weight:900;letter-spacing:5px;font-size:20px">ASTR<span style="color:#FF8A2A">A</span><span style="display:block;font-family:'Atkinson Hyperlegible',sans-serif;font-weight:400;letter-spacing:0;font-size:12px;line-height:1.3;color:#B9C6D8;margin-top:3px">Análisis de Seguridad y Trazabilidad<br>de Riesgos en Actividades</span></div>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:12px;padding:10px 0 4px">
+    <div style="width:132px;height:132px;border-radius:50%;background:rgba(47,210,122,.16);box-shadow:0 0 0 14px rgba(47,210,122,.07);display:grid;place-items:center"><svg width="64" height="64" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#2FD27A" stroke-width="2"/></svg></div>
+    <h1 style="margin:0;font-family:Archivo,sans-serif;font-weight:800;font-size:30px;line-height:1.1;text-align:center">Trabajo en curso</h1>
+    <div style="font-size:16px;color:#B9C6D8">Moldaje de losa · piso 2 · jornada 1 de 2</div>
+  </div>
+  <div style="background:#16233A;border:1px solid #2A3F62;border-radius:16px;padding:6px 16px">
+    <div class="r"><span>Firmaste</span><b>09:57 con PIN</b></div>
+    <div class="r"><span>Verificó en terreno</span><b>Héctor · 10:02</b></div>
+    <div class="r"><span>En la AST</span><b>4 personas</b></div>
+    <div class="r" style="border:0"><span>Vence</span><b>Mañana 20:00</b></div>
+  </div>
+  <p style="margin:0;font-size:16px;line-height:1.5;color:#B9C6D8">Guarda el teléfono mientras trabajas. Si algo cambia o ves peligro, detén el trabajo.</p>
+  <button style="margin-top:auto;height:72px;border:0;border-radius:16px;background:#FF6B6B;color:#2A0606;font-family:inherit;font-weight:700;font-size:22px;display:flex;align-items:center;justify-content:center;gap:12px"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6h12v12H6z" fill="#2A0606"/></svg>Detener el trabajo</button>
+  <button style="height:56px;border:1px solid #2A3F62;border-radius:16px;background:#1D2E4A;color:#F4F7FC;font-family:inherit;font-weight:700;font-size:18px">Registrar un cambio</button>
+<div style="display:flex;align-items:center;justify-content:center;gap:8px;padding:8px 0 0;border-top:1px solid #2A3F62;flex-shrink:0"><img src="img/emotion.png" alt="E-MOTION CHILE" style="width:22px;height:22px;border-radius:5px"><span style="font-size:12px;letter-spacing:2px;color:#B9C6D8">UN PROYECTO DE <b style="color:#F4F7FC">E-MOTION CHILE</b></span></div>
+</div>
+</div></div>
+<script>
+(function(){
+  var marco=document.getElementById('marco'), escena=document.getElementById('escena');
+  if(marco.classList.contains('fluido')) return;
+  var raiz=marco.firstElementChild;
+  function ajustar(){
+    var w=raiz.offsetWidth, h=raiz.offsetHeight, franja=document.querySelector('.demo-franja').offsetHeight;
+    var s=Math.min(1,(window.innerWidth-16)/w);
+    if(h<=1000) s=Math.min(s,(window.innerHeight-franja-36)/h);
+    s=Math.max(s,0.3);
+    marco.style.transform='scale('+s+')';
+    escena.style.height=(h*s+36)+'px';
+  }
+  window.addEventListener('resize',ajustar); ajustar();
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(ajustar);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>ASTRA · Prevención · accidente grave · Demostración</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+body{margin:0}
+a{color:#FF8A2A}a:hover{color:#ffb070}
+.s{display:flex;align-items:center;gap:12px;background:#16233A;border:1px solid #2A3F62;border-radius:14px;padding:12px 14px}
+.s b{display:block;font-size:17px}
+.s span{font-size:15px;color:#B9C6D8}
+.s .ok{margin-left:auto;width:30px;height:30px;border-radius:50%;background:#2FD27A;display:grid;place-items:center;flex-shrink:0}
+.s .pend{margin-left:auto;flex-shrink:0}
+.s .pend button{height:44px;padding:0 12px;border-radius:12px;border:0;background:#FF8A2A;color:#1B1206;font-family:inherit;font-weight:700;font-size:15px}
+</style>
+<style>
+html,body{margin:0;background:#0b111c}
+.demo-franja{position:sticky;top:0;z-index:100;background:#e8a317;color:#1d1606;font:600 13px/1.35 system-ui,sans-serif;text-align:center;padding:8px 12px}
+.demo-franja a{color:#1d1606}
+#escena{display:flex;justify-content:center;padding:12px 0 24px}
+#marco{transform-origin:top center}
+#marco.fluido{width:100%}
+</style>
+</head>
+<body>
+<div class="demo-franja">DEMOSTRACIÓN · Datos ficticios · <a href="index.html">Mapa de pantallas</a> · <a href="prototipo/">Probar el prototipo funcional</a> · <a href="https://e-motionchile.cl">E-MOTION CHILE SpA</a></div>
+<div id="escena"><div id="marco" class="fijo">
+<div style="position:relative;width:390px;height:844px;box-sizing:border-box;background:#0E1726;color:#F4F7FC;font-family:'Atkinson Hyperlegible','Segoe UI',sans-serif;display:flex;flex-direction:column"><a href="P14-permiso.html" style="position:absolute;top:4px;left:12px;z-index:5;font-size:13px;font-weight:700;color:#FF8A2A;text-decoration:none;line-height:16px">‹ Volver</a>
+  <div style="background:#FF6B6B;color:#2A0606;padding:20px 20px 16px;display:flex;flex-direction:column;gap:6px">
+    <div style="font-family:Archivo,sans-serif;font-weight:900;letter-spacing:5px;font-size:18px">ASTRA<span style="display:block;font-family:'Atkinson Hyperlegible',sans-serif;font-weight:400;letter-spacing:0;font-size:12px;line-height:1.3;margin-top:2px">Análisis de Seguridad y Trazabilidad de Riesgos en Actividades</span></div>
+    <div style="font-size:15px;font-weight:700;letter-spacing:1px">ACCIDENTE GRAVE · EXCAVACIÓN</div>
+    <div style="font-family:Archivo,sans-serif;font-weight:900;font-size:28px;line-height:1.05">Área suspendida desde las 14:22</div>
+    <div style="font-size:15px">Nadie puede crear ni iniciar AST aquí hasta la reanudación autorizada.</div>
+  </div>
+  <div style="flex:1;padding:16px 20px 22px;display:flex;flex-direction:column;gap:10px">
+    <div style="font-size:18px;font-weight:700">Pasos obligatorios</div>
+    <div class="s"><div><b>Atención y traslado</b><span>Organismo administrador · 14:25</span></div><span class="ok"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#06210F" stroke-width="2.6"/></svg></span></div>
+    <div class="s"><div><b>Aviso a la Inspección del Trabajo y a la Seremi</b><span>Inmediato · registra hora y folio</span></div><div class="pend"><button>Registrar</button></div></div>
+    <div class="s"><div><b>DIAT</b><span>Quedan <b style="font-family:'IBM Plex Mono',monospace;color:#FFC93D;display:inline">21 h 38 min</b></span></div><div class="pend"><button>Emitir</button></div></div>
+    <div class="s"><div><b>Investigación</b><span>Comité paritario y Prevención</span></div><span class="pend" style="font-size:15px;color:#B9C6D8">después</span></div>
+    <div class="s"><div><b>Reanudar faena</b><span>Solo con autorización registrada</span></div><span class="pend" style="font-size:15px;color:#B9C6D8">bloqueado</span></div>
+    <div style="font-size:15px;color:#B9C6D8">Además: la matriz de riesgos queda marcada para revisión por el accidente.</div>
+    <a href="P16-auditor.html" style="margin-top:auto;height:64px;border:0;border-radius:16px;background:#FF8A2A;color:#1B1206;font-family:inherit;font-weight:700;font-size:20px;display:flex;align-items:center;justify-content:center;text-decoration:none">Llamar a la Inspección</a>
+  </div>
+<div style="display:flex;align-items:center;justify-content:center;gap:8px;padding:6px 0 10px;flex-shrink:0"><img src="img/emotion.png" alt="E-MOTION CHILE" style="width:22px;height:22px;border-radius:5px"><span style="font-size:12px;letter-spacing:2px;color:#B9C6D8">UN PROYECTO DE <b style="color:#F4F7FC">E-MOTION CHILE</b></span></div>
+</div>
+</div></div>
+<script>
+(function(){
+  var marco=document.getElementById('marco'), escena=document.getElementById('escena');
+  if(marco.classList.contains('fluido')) return;
+  var raiz=marco.firstElementChild;
+  function ajustar(){
+    var w=raiz.offsetWidth, h=raiz.offsetHeight, franja=document.querySelector('.demo-franja').offsetHeight;
+    var s=Math.min(1,(window.innerWidth-16)/w);
+    if(h<=1000) s=Math.min(s,(window.innerHeight-franja-36)/h);
+    s=Math.max(s,0.3);
+    marco.style.transform='scale('+s+')';
+    escena.style.height=(h*s+36)+'px';
+  }
+  window.addEventListener('resize',ajustar); ajustar();
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(ajustar);
+})();
+</script>
+</body>
+</html>

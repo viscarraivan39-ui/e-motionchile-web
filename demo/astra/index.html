@@ -4,40 +4,127 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>ASTRA · Demostración</title>
-<meta name="description" content="Demostración de ASTRA, de E-MOTION CHILE SpA. Datos ficticios, solo para demostración.">
-<link rel="stylesheet" href="estilos.css">
-<meta name="theme-color" content="#14202e">
+<title>ASTRA · identidad y mapa de pantallas · Demostración</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800;900&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@500&display=swap">
 <style>
-.demo-franja{position:sticky;top:0;z-index:50;background:#e8a317;color:#1d1606;font:600 13px/1.35 system-ui,sans-serif;text-align:center;padding:8px 12px}
+body{margin:0}
+a{color:#FF8A2A}a:hover{color:#ffb070}
+</style>
+<style>
+html,body{margin:0;background:#0b111c}
+.demo-franja{position:sticky;top:0;z-index:100;background:#e8a317;color:#1d1606;font:600 13px/1.35 system-ui,sans-serif;text-align:center;padding:8px 12px}
 .demo-franja a{color:#1d1606}
+#escena{display:flex;justify-content:center;padding:12px 0 24px}
+#marco{transform-origin:top center}
+#marco.fluido{width:100%}
 </style>
 </head>
 <body>
-<div class="demo-franja">DEMOSTRACIÓN · Datos ficticios, no usar en faena · <a href="https://e-motionchile.cl">E-MOTION CHILE SpA</a></div>
-<div id="app"></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
-<script src="matriz.js"></script>
-<script src="motor.js"></script>
-<script src="biblioteca.js"></script>
-<script src="cuadrilla.js"></script>
-<script src="terreno.js"></script>
-<script src="aprendizaje.js"></script>
-<script src="documentos.js"></script>
-<script src="sincronizacion.js"></script>
-<script src="nomina.js"></script>
-<script src="escenario.js"></script>
-<script src="cumplimiento.js"></script>
-<script src="obra-modelo.js"></script>
-<script src="maquinas.js"></script>
-<script src="vistas-cuadrilla.js"></script>
-<script src="vistas-terreno.js"></script>
-<script src="vistas-aprendizaje.js"></script>
-<script src="vistas-nomina.js"></script>
-<script src="vistas-documentos.js"></script>
-<script src="vistas-escenario.js"></script>
-<script src="vistas-maquinas.js"></script>
-<script src="vistas-cumplimiento.js"></script>
-<script src="app.js"></script>
+<div class="demo-franja">DEMOSTRACIÓN · Datos ficticios · <a href="index.html">Mapa de pantallas</a> · <a href="prototipo/">Probar el prototipo funcional</a> · <a href="https://e-motionchile.cl">E-MOTION CHILE SpA</a></div>
+<div id="escena"><div id="marco" class="fijo">
+<div style="width: 1280px; height: 1760px; box-sizing: border-box; padding: 64px 72px; background: #0E1726; color: #F4F7FC; font-family: 'Atkinson Hyperlegible', 'Segoe UI', sans-serif; display: flex; flex-direction: column; gap: 44px">
+
+  <div style="display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 48px; align-items: end">
+    <div style="display: flex; flex-direction: column; gap: 14px">
+      <div style="font-family: Archivo, sans-serif; font-weight: 900; font-size: 88px; letter-spacing: 14px; line-height: 1">ASTR<span style="color: #FF8A2A">A</span></div>
+      <div style="font-size: 18px; letter-spacing: 1px; color: #B9C6D8"><b style="color: #F4F7FC">A</b>nálisis de <b style="color: #F4F7FC">S</b>eguridad y <b style="color: #F4F7FC">T</b>razabilidad de <b style="color: #F4F7FC">R</b>iesgos en <b style="color: #F4F7FC">A</b>ctividades</div>
+      <div style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 30px; line-height: 1.2">La AST que se cumple en terreno</div>
+      <a href="P01-ingreso.html" style="align-self:flex-start;display:inline-flex;align-items:center;gap:8px;height:48px;padding:0 22px;border-radius:14px;background:#FF8A2A;color:#1B1206;font-weight:700;font-size:18px;text-decoration:none">Ver la demo ▶</a>
+      <div style="display: flex; align-items: center; gap: 10px; font-size: 16px; color: #B9C6D8; letter-spacing: 2px"><img src="img/emotion.png" alt="E-MOTION CHILE" style="width: 34px; height: 34px; border-radius: 7px">UN PROYECTO DE <b style="color: #F4F7FC">E-MOTION CHILE</b></div>
+      <p style="margin: 0; font-size: 19px; line-height: 1.55; color: #B9C6D8; max-width: 600px">Identidad «noche de faena»: fondo azul noche que no encandila a las 7 de la mañana, naranjo de seguridad solo para la acción principal y estados que se reconocen por color, ícono y palabra, aunque se lea con guantes y al sol.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; font-size: 16px">
+      <div style="border: 1px solid #2A3F62; border-radius: 12px; padding: 14px 16px"><div style="color: #B9C6D8">Pantallas en total</div><div style="font-family: Archivo, sans-serif; font-weight: 900; font-size: 40px">25</div></div>
+      <div style="border: 1px solid #2A3F62; border-radius: 12px; padding: 14px 16px"><div style="color: #B9C6D8">Diseñadas aquí</div><div style="font-family: Archivo, sans-serif; font-weight: 900; font-size: 40px">19</div></div>
+      <div style="border: 1px solid #2A3F62; border-radius: 12px; padding: 14px 16px"><div style="color: #B9C6D8">Letra mínima</div><div style="font-family: Archivo, sans-serif; font-weight: 900; font-size: 40px">15 px</div></div>
+      <div style="border: 1px solid #2A3F62; border-radius: 12px; padding: 14px 16px"><div style="color: #B9C6D8">Botón mínimo</div><div style="font-family: Archivo, sans-serif; font-weight: 900; font-size: 40px">56 px</div></div>
+    </div>
+  </div>
+
+  <div style="display: flex; flex-direction: column; gap: 16px">
+    <h2 style="margin: 0; font-family: Archivo, sans-serif; font-weight: 800; font-size: 26px">Colores</h2>
+    <div style="display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 12px; font-size: 15px; line-height: 1.4">
+      <div style="display: flex; flex-direction: column; gap: 8px"><div style="height: 88px; border-radius: 12px; background: #0E1726; border: 1px solid #2A3F62"></div><b>Noche</b><span style="font-family: 'IBM Plex Mono', monospace">#0E1726</span><span style="color: #B9C6D8">Fondo</span></div>
+      <div style="display: flex; flex-direction: column; gap: 8px"><div style="height: 88px; border-radius: 12px; background: #16233A; border: 1px solid #2A3F62"></div><b>Panel</b><span style="font-family: 'IBM Plex Mono', monospace">#16233A</span><span style="color: #B9C6D8">Tarjetas y listas</span></div>
+      <div style="display: flex; flex-direction: column; gap: 8px"><div style="height: 88px; border-radius: 12px; background: #F4F7FC"></div><b>Tiza</b><span style="font-family: 'IBM Plex Mono', monospace">#F4F7FC</span><span style="color: #B9C6D8">Texto principal</span></div>
+      <div style="display: flex; flex-direction: column; gap: 8px"><div style="height: 88px; border-radius: 12px; background: #B9C6D8"></div><b>Niebla</b><span style="font-family: 'IBM Plex Mono', monospace">#B9C6D8</span><span style="color: #B9C6D8">Texto de apoyo</span></div>
+      <div style="display: flex; flex-direction: column; gap: 8px"><div style="height: 88px; border-radius: 12px; background: #FF8A2A"></div><b>Seguridad</b><span style="font-family: 'IBM Plex Mono', monospace">#FF8A2A</span><span style="color: #B9C6D8">Acción principal</span></div>
+      <div style="display: flex; flex-direction: column; gap: 8px"><div style="height: 88px; border-radius: 12px; background: #2FD27A"></div><b>Habilitado</b><span style="font-family: 'IBM Plex Mono', monospace">#2FD27A</span><span style="color: #B9C6D8">Cumple · listo</span></div>
+      <div style="display: flex; flex-direction: column; gap: 8px"><div style="height: 88px; border-radius: 12px; background: #FFC93D"></div><b>Atención</b><span style="font-family: 'IBM Plex Mono', monospace">#FFC93D</span><span style="color: #B9C6D8">Pendiente</span></div>
+      <div style="display: flex; flex-direction: column; gap: 8px"><div style="height: 88px; border-radius: 12px; background: #FF6B6B"></div><b>Detener</b><span style="font-family: 'IBM Plex Mono', monospace">#FF6B6B</span><span style="color: #B9C6D8">Falta crítico</span></div>
+    </div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px">
+    <div style="display: flex; flex-direction: column; gap: 14px">
+      <h2 style="margin: 0; font-family: Archivo, sans-serif; font-weight: 800; font-size: 26px">Letras y tamaños (en el teléfono)</h2>
+      <div style="display: flex; flex-direction: column; gap: 12px; border-top: 1px solid #2A3F62; padding-top: 14px">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px"><span style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 32px">Título de pantalla</span><span style="font-family: 'IBM Plex Mono', monospace; color: #B9C6D8; font-size: 15px">Archivo 800 · 32 px</span></div>
+        <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px"><span style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 22px">Subtítulo de bloque</span><span style="font-family: 'IBM Plex Mono', monospace; color: #B9C6D8; font-size: 15px">Archivo 800 · 22 px</span></div>
+        <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px"><span style="font-size: 18px">Texto para leer con calma</span><span style="font-family: 'IBM Plex Mono', monospace; color: #B9C6D8; font-size: 15px">Atkinson 400 · 18 px</span></div>
+        <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px"><span style="font-size: 20px; font-weight: 700">Texto de botón</span><span style="font-family: 'IBM Plex Mono', monospace; color: #B9C6D8; font-size: 15px">Atkinson 700 · 20 px</span></div>
+        <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px"><span style="font-size: 15px; color: #B9C6D8">Etiqueta y nota</span><span style="font-family: 'IBM Plex Mono', monospace; color: #B9C6D8; font-size: 15px">Atkinson 400 · 15 px</span></div>
+      </div>
+      <p style="margin: 0; font-size: 16px; line-height: 1.5; color: #B9C6D8">Atkinson Hyperlegible fue diseñada para personas con baja visión: distingue bien la I de la l y el 1, y el 0 de la O. Sirve para leer un PIN o un código de área en terreno.</p>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 14px">
+      <h2 style="margin: 0; font-family: Archivo, sans-serif; font-weight: 800; font-size: 26px">Componentes</h2>
+      <div style="display: flex; flex-direction: column; gap: 12px; border-top: 1px solid #2A3F62; padding-top: 14px">
+        <button style="height: 64px; border: 0; border-radius: 16px; background: #FF8A2A; color: #1B1206; font-family: inherit; font-weight: 700; font-size: 20px">Acción principal · 64 px</button>
+        <button style="height: 56px; border: 1px solid #2A3F62; border-radius: 16px; background: #1D2E4A; color: #F4F7FC; font-family: inherit; font-weight: 700; font-size: 18px">Acción secundaria · 56 px</button>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap; font-size: 15px; font-weight: 700">
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 30px; background: rgba(47,210,122,.16); color: #2FD27A"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>Cumple</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 30px; background: rgba(255,201,61,.16); color: #FFC93D"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-dasharray="3 3"/></svg>Pendiente</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 30px; background: rgba(255,107,107,.18); color: #FF6B6B"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>Falta crítico</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 14px; background: #16233A; border: 1px solid #2A3F62; border-radius: 16px; padding: 14px 16px; font-size: 18px; font-weight: 700">
+          <span style="width: 40px; height: 40px; border-radius: 10px; background: #1D2E4A; display: grid; place-items: center"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 15a8 8 0 0116 0v2H4z M12 7V4" fill="none" stroke="#F4F7FC" stroke-width="2"/></svg></span>
+          Fila de requisito<span style="margin-left: auto; width: 34px; height: 34px; border-radius: 50%; background: #2FD27A; display: grid; place-items: center"><svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#06210F" stroke-width="2.6"/></svg></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; flex-direction: column; gap: 14px">
+    <h2 style="margin: 0; font-family: Archivo, sans-serif; font-weight: 800; font-size: 26px">Mapa de pantallas · 25 en total</h2>
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; font-size: 16px; line-height: 1.5">
+      <div style="border: 1px solid #2A3F62; border-radius: 14px; padding: 18px; display: flex; flex-direction: column; gap: 6px">
+        <b style="font-family: Archivo, sans-serif; font-size: 20px">Trabajador · 11</b>
+        <span>01 Ingreso · 02 Área escaneada · 03 Contar el trabajo · 04 Procedimientos y plazo · 05 Lista · 06 No puedes partir · 07 Firma · 08 En curso · 09 Registro del día · 10 Microcápsula</span>
+        <span style="color: #B9C6D8">Además: Mis AST y Mi ficha (habilitaciones).</span>
+      </div>
+      <div style="border: 1px solid #2A3F62; border-radius: 14px; padding: 18px; display: flex; flex-direction: column; gap: 6px">
+        <b style="font-family: Archivo, sans-serif; font-size: 20px">Capataz y encargado · 3</b>
+        <span>11 Verificar en terreno</span>
+        <span style="color: #B9C6D8">Además: Cuadrilla del día y Permisos de trabajo por revisar.</span>
+      </div>
+      <div style="border: 1px solid #2A3F62; border-radius: 14px; padding: 18px; display: flex; flex-direction: column; gap: 6px">
+        <b style="font-family: Archivo, sans-serif; font-size: 20px">Prevención · 11</b>
+        <span>Teléfono: 12 Faena en vivo · 13 Pendientes · 14 Autorizar permiso · 15 Accidente grave · 16 Auditor</span>
+        <span>Computador: Panel en vivo · Informes · Informe PDF</span>
+        <span style="color: #B9C6D8">Además: Matriz de riesgos, Biblioteca de procedimientos y Configuración.</span>
+      </div>
+    </div>
+    <p style="margin: 0; font-size: 16px; color: #B9C6D8">Reglas: una acción principal por pantalla, nunca dos botones naranjos juntos; cada estado lleva color, ícono y palabra; el teléfono se usa en la zona de llenado del área, nunca mientras se trabaja.</p>
+  </div>
+</div>
+</div></div>
+<script>
+(function(){
+  var marco=document.getElementById('marco'), escena=document.getElementById('escena');
+  if(marco.classList.contains('fluido')) return;
+  var raiz=marco.firstElementChild;
+  function ajustar(){
+    var w=raiz.offsetWidth, h=raiz.offsetHeight, franja=document.querySelector('.demo-franja').offsetHeight;
+    var s=Math.min(1,(window.innerWidth-16)/w);
+    if(h<=1000) s=Math.min(s,(window.innerHeight-franja-36)/h);
+    s=Math.max(s,0.3);
+    marco.style.transform='scale('+s+')';
+    escena.style.height=(h*s+36)+'px';
+  }
+  window.addEventListener('resize',ajustar); ajustar();
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(ajustar);
+})();
+</script>
 </body>
 </html>

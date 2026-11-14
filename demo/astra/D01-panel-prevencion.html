@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>ASTRA · Panel de Prevención (computador) · Demostración</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+body{margin:0;background:#0E1726}
+a{color:#FF8A2A}a:hover{color:#ffb070}
+.nav a{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:10px;color:#B9C6D8;text-decoration:none;font-size:15px;font-weight:700}
+.nav a.on{background:#1D2E4A;color:#F4F7FC}
+.kpi{background:#16233A;border:1px solid #2A3F62;border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.kpi b{font-family:Archivo,sans-serif;font-weight:900;font-size:34px;line-height:1.1}
+.kpi span{font-size:15px;color:#B9C6D8}
+.zona{border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:4px;min-height:74px;font-size:15px}
+.zona b{font-size:16px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th{text-align:left;color:#B9C6D8;font-weight:700;padding:8px 10px;border-bottom:1px solid #2A3F62}
+td{padding:10px;border-bottom:1px solid #1F3050}
+.est{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:20px;font-size:14px;font-weight:700}
+.ev{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid #1F3050;font-size:15px}
+.ev time{font-family:'IBM Plex Mono',monospace;color:#B9C6D8;flex-shrink:0;font-size:14px;padding-top:2px}
+</style>
+<style>
+html,body{margin:0;background:#0b111c}
+.demo-franja{position:sticky;top:0;z-index:100;background:#e8a317;color:#1d1606;font:600 13px/1.35 system-ui,sans-serif;text-align:center;padding:8px 12px}
+.demo-franja a{color:#1d1606}
+#escena{display:flex;justify-content:center;padding:12px 0 24px}
+#marco{transform-origin:top center}
+#marco.fluido{width:100%}
+</style>
+</head>
+<body>
+<div class="demo-franja">DEMOSTRACIÓN · Datos ficticios · <a href="index.html">Mapa de pantallas</a> · <a href="prototipo/">Probar el prototipo funcional</a> · <a href="https://e-motionchile.cl">E-MOTION CHILE SpA</a></div>
+<div id="escena"><div id="marco" class="fluido">
+<div style="position:relative;min-height:900px;box-sizing:border-box;background:#0E1726;color:#F4F7FC;font-family:'Atkinson Hyperlegible','Segoe UI',sans-serif;display:flex;flex-wrap:wrap"><a href="P16-auditor.html" style="position:absolute;top:4px;right:12px;z-index:5;font-size:13px;font-weight:700;color:#FF8A2A;text-decoration:none;line-height:16px">‹ Volver</a>
+  <aside class="nav" style="flex:1 1 220px;max-width:240px;box-sizing:border-box;padding:22px 16px;border-right:1px solid #2A3F62;display:flex;flex-direction:column;gap:4px">
+    <div style="font-family:Archivo,sans-serif;font-weight:900;letter-spacing:6px;font-size:24px;padding:0 12px">ASTR<span style="color:#FF8A2A">A</span></div>
+    <div style="font-size:13px;color:#B9C6D8;padding:2px 12px 16px;line-height:1.35">Análisis de Seguridad y Trazabilidad de Riesgos en Actividades</div>
+    <a href="#" class="on">En vivo</a>
+    <a href="#">AST del día</a>
+    <a href="#">Cuadrillas</a>
+    <a href="#">Máquinas · Checkmaq</a>
+    <a href="#">Matriz de riesgos</a>
+    <a href="#">Auditor legal</a>
+    <a href="#">Informes</a>
+    <a href="#">Procedimientos</a>
+    <a href="#">Microcápsulas</a>
+    <a href="#">Configuración</a>
+    <div style="margin-top:auto;display:flex;align-items:center;gap:8px;padding:16px 12px 0;border-top:1px solid #2A3F62"><img src="img/emotion.png" alt="E-MOTION CHILE" style="width:26px;height:26px;border-radius:6px"><span style="font-size:12px;letter-spacing:1px;color:#B9C6D8;line-height:1.3">UN PROYECTO DE<br><b style="color:#F4F7FC">E-MOTION CHILE</b></span></div>
+  </aside>
+  <main style="flex:999 1 900px;min-width:0;padding:22px 28px;display:flex;flex-direction:column;gap:18px;box-sizing:border-box">
+    <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+      <h1 style="margin:0;font-family:Archivo,sans-serif;font-weight:800;font-size:30px">Faena en vivo</h1>
+      <span style="font-size:16px;color:#B9C6D8">Edificio Los Aromos · miércoles 11-nov · 10:06</span>
+      <span style="margin-left:auto;display:flex;gap:10px;align-items:center"><span style="font-size:15px;color:#B9C6D8">Celia Modelo · Prevención</span><span style="width:40px;height:40px;border-radius:50%;background:#FF8A2A;color:#1B1206;font-weight:700;display:grid;place-items:center">CM</span></span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px">
+      <div class="kpi"><b>12</b><span>AST activas</span></div>
+      <div class="kpi"><b>48<span style="font-size:18px;color:#B9C6D8"> / 63</span></b><span>Personas en faena</span></div>
+      <div class="kpi"><b style="color:#FF6B6B">2</b><span>Bloqueos ahora</span></div>
+      <div class="kpi"><b style="color:#FFC93D">3</b><span>Hallazgos abiertos</span></div>
+      <div class="kpi"><b style="color:#FFC93D">1</b><span>Máquina con falla</span></div>
+      <div class="kpi"><b style="color:#2FD27A">14<span style="font-size:18px;color:#B9C6D8"> / 16</span></b><span>Auditor legal</span></div>
+    </div>
+    <div style="display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:18px">
+      <div style="display:flex;flex-direction:column;gap:18px;min-width:0">
+        <section style="background:#16233A;border:1px solid #2A3F62;border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:12px">
+          <h2 style="margin:0;font-family:Archivo,sans-serif;font-weight:800;font-size:20px">Áreas de la obra</h2>
+          <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px">
+            <div class="zona" style="background:rgba(47,210,122,.12)"><b>Piso 1</b><span style="color:#2FD27A">3 AST · 11 personas</span></div>
+            <div class="zona" style="background:rgba(255,107,107,.16)"><b>Piso 2</b><span style="color:#FF6B6B">1 bloqueo · 4 personas</span></div>
+            <div class="zona" style="background:rgba(47,210,122,.12)"><b>Piso 3</b><span style="color:#2FD27A">2 AST · 8 personas</span></div>
+            <div class="zona" style="background:rgba(47,210,122,.12)"><b>Taller moldajes</b><span style="color:#2FD27A">1 AST · 5 personas</span></div>
+            <div class="zona" style="background:rgba(255,201,61,.14)"><b>Patio maquinaria</b><span style="color:#FFC93D">RT-01 prioritaria</span></div>
+            <div class="zona" style="background:rgba(47,210,122,.12)"><b>Acopio</b><span style="color:#2FD27A">1 AST · 3 personas</span></div>
+            <div class="zona" style="background:rgba(255,107,107,.16)"><b>Excavación</b><span style="color:#FF6B6B">RT-04 fuera de servicio</span></div>
+            <div class="zona" style="background:#1D2E4A"><b>Cubierta</b><span style="color:#B9C6D8">Sin actividad</span></div>
+          </div>
+        </section>
+        <section style="background:#16233A;border:1px solid #2A3F62;border-radius:16px;padding:16px;overflow-x:auto">
+          <h2 style="margin:0 0 8px;font-family:Archivo,sans-serif;font-weight:800;font-size:20px">AST activas</h2>
+          <table>
+            <thead><tr><th>Área</th><th>Trabajo</th><th>Cuadrilla</th><th>Personas</th><th>Estado</th><th>Vence</th></tr></thead>
+            <tbody>
+              <tr><td>Piso 2</td><td>Moldaje de losa con sierra</td><td>C1 · Héctor</td><td>4</td><td><span class="est" style="background:rgba(255,107,107,.18);color:#FF6B6B">Bloqueada</span></td><td>Mañana 20:00</td></tr>
+              <tr><td>Piso 1</td><td>Barandas en borde de losa</td><td>C2 · Irene</td><td>5</td><td><span class="est" style="background:rgba(47,210,122,.16);color:#2FD27A">En curso</span></td><td>Hoy 20:00</td></tr>
+              <tr><td>Piso 3</td><td>Enfierradura de losa</td><td>C1 · Héctor</td><td>4</td><td><span class="est" style="background:rgba(255,201,61,.16);color:#FFC93D">Por verificar</span></td><td>Hoy 20:00</td></tr>
+              <tr><td>Acopio</td><td>Traslado con manipulador</td><td>C4 · Lucas</td><td>3</td><td><span class="est" style="background:rgba(47,210,122,.16);color:#2FD27A">En curso</span></td><td>Hoy 20:00</td></tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+      <section style="background:#16233A;border:1px solid #2A3F62;border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:6px;min-width:0">
+        <h2 style="margin:0 0 4px;font-family:Archivo,sans-serif;font-weight:800;font-size:20px">Avisos de hoy</h2>
+        <div class="ev"><time>09:44</time><div><b style="color:#FF6B6B">Bloqueo · piso 2.</b> Mónica sin pantalla facial para cortar con sierra.</div></div>
+        <div class="ev"><time>08:15</time><div><b style="color:#FFC93D">Cambio declarado.</b> Losa mojada en piso 2 (día 2 de 2). Héctor debe verificar.</div></div>
+        <div class="ev"><time>07:58</time><div><b style="color:#FF6B6B">RT-04 fuera de servicio.</b> 2 AST de excavación detenidas.</div></div>
+        <div class="ev"><time>07:55</time><div><b style="color:#FFC93D">RT-01 prioritaria.</b> Neumático con corte, con foto.</div></div>
+        <div class="ev" style="border:0"><time>07:30</time><div>42 personas registradas en la primera hora.</div></div>
+        <a href="D02-informes.html" style="margin-top:auto;display:flex;align-items:center;justify-content:center;height:52px;border-radius:14px;background:#FF8A2A;color:#1B1206;text-decoration:none;font-weight:700;font-size:17px">Ir al bloqueo de piso 2</a>
+      </section>
+    </div>
+  </main>
+</div>
+</div></div>
+<script>
+(function(){
+  var marco=document.getElementById('marco'), escena=document.getElementById('escena');
+  if(marco.classList.contains('fluido')) return;
+  var raiz=marco.firstElementChild;
+  function ajustar(){
+    var w=raiz.offsetWidth, h=raiz.offsetHeight, franja=document.querySelector('.demo-franja').offsetHeight;
+    var s=Math.min(1,(window.innerWidth-16)/w);
+    if(h<=1000) s=Math.min(s,(window.innerHeight-franja-36)/h);
+    s=Math.max(s,0.3);
+    marco.style.transform='scale('+s+')';
+    escena.style.height=(h*s+36)+'px';
+  }
+  window.addEventListener('resize',ajustar); ajustar();
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(ajustar);
+})();
+</script>
+</body>
+</html>
