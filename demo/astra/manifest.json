@@ -1,0 +1,9 @@
+{
+  "name": "ASTRA · Análisis de Seguridad y Trazabilidad de Riesgos en Actividades",
+  "short_name": "ASTRA",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#14202e",
+  "theme_color": "#14202e",
+  "lang": "es-CL"
+}
